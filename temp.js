@@ -1,6 +1,28 @@
 function searchTemp() {
   hitToSearch();
 }
+// const input=document.getElementById('city-input');
+// input.addEventListener('click',event=>{
+//   console.log(event.log);
+// })
+
+// var input = document.getElementById("city-input");
+// input.addEventListener("keyup", function(event) {
+//   console.log("inside hit");
+//   // if (event.keyCode === 13) {
+//   //  event.preventDefault();
+//   //  document.getElementById("enter-btn").click();
+//   // }
+// });
+
+var input = document.getElementById("city-input");
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   document.getElementById("enter-btn").click();
+  }
+});
+
 
 function hitToSearch(){
   let cityName = document.getElementById('city-input').value;
@@ -39,6 +61,9 @@ function loadData(cityName) {
 
         //weather-hint
         document.getElementById('weather-hint').innerHTML = data.weather[0].main;
+
+        //for showing data
+        document.getElementById('weather-status').style.display='block';
       }
     })
 }
