@@ -36,7 +36,7 @@ function hitToSearch(){
 }
 
 function loadData(cityName) {
-  const weatherUrl = `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=9032b428eebd8c1851d5f84c53b8ff07`;
+  const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=9032b428eebd8c1851d5f84c53b8ff07`;
 
   document.getElementById('city-input').value = "";
 
