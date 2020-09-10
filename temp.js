@@ -15,13 +15,13 @@ function searchTemp() {
 //   // }
 // });
 
-var input = document.getElementById("city-input");
-input.addEventListener("keyup", function(event) {
-  if (event.keyCode === 13) {
-   event.preventDefault();
-   document.getElementById("enter-btn").click();
-  }
-});
+// var input = document.getElementById("city-input");
+// input.addEventListener("keyup", function(event) {
+//   if (event.keyCode === 13) {
+//    event.preventDefault();
+//    document.getElementById("enter-btn").click();
+//   }
+// });
 
 
 function hitToSearch(){
